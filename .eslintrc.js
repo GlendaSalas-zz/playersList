@@ -4,7 +4,7 @@ module.exports = {
     'node': true,
     'es6': true,
   },
-  'extends': 'google',
+  'extends': ['plugin:react/recommended'],
   'globals': {
     'Atomics': 'readonly',
     'SharedArrayBuffer': 'readonly',
@@ -33,6 +33,7 @@ module.exports = {
     'semi': [
       'error',
       'never'
-    ]
+    ],
+    "react/jsx-uses-vars": [2],
   },
 };
